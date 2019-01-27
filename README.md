@@ -1,13 +1,9 @@
-# DanceNet - Dance generator using Variational Autoencoder, LSTM and Mixture Density Network. (Keras)
+# dancingAI
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/jsn5/dancenet/blob/master/LICENSE) [![Run on FloydHub](https://static.floydhub.com/button/button-small.svg)](https://floydhub.com/run)
-[![DOI](https://zenodo.org/badge/143685321.svg)](https://zenodo.org/badge/latestdoi/143685321)
-
-
-This is an attempt to create a dance generator AI, inspired by [this](https://www.youtube.com/watch?v=Sc7RiNgHHaE&t=9s) video by [@carykh](https://twitter.com/realCarykh)
+This is inspired by [this](https://www.youtube.com/watch?v=Sc7RiNgHHaE&t=9s) video by [@carykh](https://twitter.com/realCarykh)
 
 
-![](https://github.com/jsn5/dancenet/blob/master/demo.gif ) ![](https://github.com/jsn5/dancenet/blob/master/demo2.gif )
+![](https://github.com/jsn5/dancenet/blob/master/demo.gif ) 
 
 ## Main components:
 
