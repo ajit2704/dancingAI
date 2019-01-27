@@ -3,7 +3,7 @@
 This is inspired by [this](https://www.youtube.com/watch?v=Sc7RiNgHHaE&t=9s) video by [@carykh](https://twitter.com/realCarykh)
 
 
-![](https://github.com/jsn5/dancenet/blob/master/demo.gif ) 
+![](https://github.com/ajit2704/dancingAI/blob/master/sample.gif) 
 
 # Implementation
 
