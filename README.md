@@ -5,53 +5,22 @@ This is inspired by [this](https://www.youtube.com/watch?v=Sc7RiNgHHaE&t=9s) vid
 
 ![](https://github.com/jsn5/dancenet/blob/master/demo.gif ) 
 
-## Main components:
+# Implementation
 
-* Variational autoencoder
-* LSTM + Mixture Density Layer
+In the video, he explains the concept & methods. But lot of things were need to be assume, like the encoders & the LSTM network. It was also worth mentioning  it works using MDN. Also the issues like the network repeating the pattern after few seconds(mentioned in carykh's video also), can be seen in video (result.mp4) in this repo. 
 
-## Requirements:
+# Working
 
-* Python version = 3.5.2
+I used colab for the computation purpose. To work this notebook, open colab & place the weights in correct path in google drive. Adjust the path if needed.
 
-  ### Packages
-  * keras==2.2.0
-  * sklearn==0.19.1
-  * numpy==1.14.3
-  * opencv-python==3.4.1
+For colab, checkout https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d
 
-## Dataset
+encoded data can be found [here](https://drive.google.com/file/d/1FsrGFoFjWIEEf4aKy6jkkkTB2bG5Z-ay/view?usp=sharing)
 
-https://www.youtube.com/watch?v=NdSqAAT28v0
-This is the video used for training.
+# References
 
+ 1. [carykh youtube video](https://www.youtube.com/watch?v=Sc7RiNgHHaE&t=9s) by Cary Huang
+ 2. [Time Series Prediction with LSTM Recurrent Neural Networks in Python with Keras](https://machinelearningmastery.com/time-series-    prediction-lstm-recurrent-neural-networks-python-keras/)
+ 3. [Mixture Density Networks](http://blog.otoro.net/2015/06/14/mixture-density-networks/) by [David Ha](https://twitter.com/hardmaru)
 
-## How to run locally
-
-* Download the trained weights from [here](https://drive.google.com/file/d/1LWtERyPAzYeZjL816gBoLyQdC2MDK961/view?usp=sharing). and extract it to the dancenet dir.
-* Run dancegen.ipynb
-
-## How to run in your browser
-
-[![Run on FloydHub](https://static.floydhub.com/button/button-small.svg)](https://floydhub.com/run)
-
-* Click the button above to open this code in a FloydHub workspace (the [trained weights dataset](https://www.floydhub.com/whatrocks/datasets/dancenet-weights) will be automatically attached to the environment)
-* Run dancegen.ipynb
-
-## Training from scratch
-
-* fill dance sequence images labeled as `1.jpg`, `2.jpg` ... in `imgs/` folder
-* run `model.py`
-* run `gen_lv.py` to encode images
-* run `video_from_lv.py` to test decoded video
-* run  jupyter notebook `dancegen.ipynb` to train dancenet and generate new video.
-
-## References
-
-* [Original project video](https://www.youtube.com/watch?v=Sc7RiNgHHaE&t=9s) by Cary Huang
-* [Building autoencoders in keras](https://blog.keras.io/building-autoencoders-in-keras.html) by [Francois Chollet](https://twitter.com/fchollet)
-* [Time Series Prediction with LSTM Recurrent Neural Networks in Python with Keras](https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/)
-* [Generative Choreography using Deep Learning](https://arxiv.org/abs/1605.06921)
-* [Mixture Density Networks](http://blog.otoro.net/2015/06/14/mixture-density-networks/) by [David Ha](https://twitter.com/hardmaru)
-* [Mixture Density Layer for Keras](https://github.com/cpmpercussion/keras-mdn-layer) by [Charles Martin](https://github.com/cpmpercussion/)
  
